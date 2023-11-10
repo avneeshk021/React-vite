@@ -46,6 +46,35 @@ setPassword(pass)
            />
            <label htmlFor=""> Length : {length}</label>
         </div>
+
+{/* length checkbox */}
+
+        <div className='flex item-center gap-x-1'>
+          {/*  yaha niche call back fire kiya hai 
+          
+          */}
+          <input type="checkbox"
+          defaultChecked={numberAllowed}
+          id='numberInput'
+          onChange={()=>{setNumberAllowed((prev)=>!prev);}}  
+          /> 
+          <label htmlFor="">Number</label>
+        </div>
+        
+        {/* charcter checkbox */}
+
+
+        <div className='flex item-center gap-x-1'>
+          {/*  yaha niche call back fire kiya hai 
+          
+          */}
+          <input type="checkbox"
+          defaultChecked={charAllowed}
+          id='charInput'
+          onChange={()=>{setNumberAllowed((prev)=>!prev);}}  
+          /> 
+          <label htmlFor="">Character</label>
+        </div>
       </div>
      </div>
     
