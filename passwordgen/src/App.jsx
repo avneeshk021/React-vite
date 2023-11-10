@@ -16,14 +16,14 @@ if(charAllowed)
 str+="!@#$%&*"
 for (let i=1; i<=length; i++)
 {
-  let char = Math.random()* str.length+1
+  let char = Math.floor(Math.random()* str.length+1)
 pass+=str.charAt(char)// yaha password me value append ho rhi hai
 }
 setPassword(pass)
 }, [length, numberAllowed , charAllowed, setPassword])
 useEffect(()=>{
   passwordGenerater()
-},[length,numberAllowed,charAllowed,passwordGenerater])
+},[length,numberAllowed,charAllowed, passwordGenerater])
   return (
     <>
   
