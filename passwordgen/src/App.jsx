@@ -24,7 +24,7 @@ setPassword(pass)
   return (
     <>
   
-     <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-700 text-center'>
+     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-700 text-center">
       <h1 className='text-white text-center'>Password Fetcher</h1>
       <div className='flex shadow rounded-lg overflow-hidden mb-5'>
         <input type="text"
