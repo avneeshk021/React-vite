@@ -27,7 +27,9 @@ const copyPasswordToClipboard=useCallback(()=> { passwordRef.current?.select();
   passwordRef.current?.setSelectionRange(0,60)
   window.navigator.clipboard.writeText(password)
 }, [password])
-useEffect(()=>{
+//here we use useEffect
+useEffect(()=>
+{
   passwordGenerater()
 },[length,numberAllowed,charAllowed, passwordGenerater])
   return (
