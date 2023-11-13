@@ -1,5 +1,5 @@
 //Custom Hook
-import { useEffect,useState } from "react"
+import { useEffect,useState } from "react";
 
 
 function useCurrencyInfo (currency) // this is hook
