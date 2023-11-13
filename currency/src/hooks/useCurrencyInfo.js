@@ -7,8 +7,13 @@ const [data,setData]=useState({})
 {
 useEffect(()=> {
 
-    fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`).then((res)=>res.json()).then((res)=>setData(res[currency]))
+    fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`)
+.then((res)=>res.json())
+.then((res)=>setData(res[currency]))
     console.log(data);
-},[currency]) // this is call back
-return [data,setData]
+},[currency])
+console.log(data); // this is call back
+return data
 }
+export default useCurrencyInfo;
+// custom hook design
