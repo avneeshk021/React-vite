@@ -6,13 +6,13 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import Home from './components/Header/Home/Home.jsx'
 import About from './components/About/About.jsx'
-const router = createBrowserRouter ([
+const router = createBrowserRouter([
   {
     path: '/',
     element : <Layout/>,
     children: [
       {
-        path: "",
+        path:"",
         element: <Home/>
       },
       {
@@ -24,6 +24,6 @@ const router = createBrowserRouter ([
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router ={ router }/>
+    <RouterProvider router = { router }/>
   </React.StrictMode>,
 )
